@@ -1,29 +1,47 @@
-## How to setup a scalable Next.js 14 project 📚🪑📬
+## What tools and configurations are useful for a Next.js 14 project? 📚🪑📬
 
-- What Tools and Libraries are out there? 📚
-- How do I set up my Next.js projects 🪑
+- What tools and configurations are out there? 📚
+- Which tools do I use? 🪑
 - Conclusion 📬
 
-By Tobias Gleiter, March 5., 2024
+By Tobias Gleiter, March 5, 2024
 
-### What Tools and Libraries are out there? 📚
+### What tools and configurations are out there? 📚
 
-There are many tools out there to use for a good project setup.
-E.g. these tools are known in the web-dev sector when working with Next.js:
+Numerous tools are available for establishing a robust project setup with Next.js. Here are some commonly employed ones in the web development domain:
 
-- TypeScript
-- ESLint for Type Checking
-- Commitlint for conventional commits
-- Husky for automated tasks
-- GitHub and GitHub Actions for version control
-- CI/CD pipelines for fast development
-- Jest and Cypress for testing
-- Tailwindcss
-- Prettier
-- @t3-oss/env-nextjs for manageing environment variables (which needs zod)
+- JavaScript, [TypeScript](https://www.typescriptlang.org)
+- [ESLint](https://eslint.org) for Type Checking
+- [Commitlint](https://commitlint.js.org) for conventional commits
+- [Husky](https://typicode.github.io/husky/) for automated tasks
+- GitLab, [GitHub](https://github.com), and GitHub Actions for version control
+- CI/CD pipelines for rapid development
+- [Jest](https://jestjs.io) and [Cypress](https://www.cypress.io) for testing
+- [Tailwind CSS](https://tailwindcss.com)
+- [Prettier](https://prettier.io)
+- [t3-env](https://github.com/t3-oss/t3-env) for type-safe environment variables (utilizes Zod)
+- [Shadcn/ui](https://ui.shadcn.com) for elegant functional UI components
 
-### How do I set up my Next.js projects 🪑
+In the subsequent section, I'll detail the tools I employ in my Next.js 14 projects and offer insights into their usage. Additionally, I'll provide a video demonstrating the complete project setup to assist you in creating your own template project.
 
-I use all of these tools to setup my projects.
+### Which tools do I use? 🪑
+
+In all my projects, I leverage **TypeScript** due to its ability to enhance the developer experience significantly. While it might appear daunting initially, the benefits of type safety become apparent over time.
+
+I incorporate **ESLint, Commitlint, and Husky** into my workflow. ESLint aids in code quality assurance by enforcing preconfigured rules. Commitlint proves invaluable for team collaboration, ensuring clear and traceable commit messages following conventional standards.
+
+**Husky** automates code checks during commits and pushes to GitHub, ensuring adherence to quality standards before changes are synced to the cloud repository. Integrating ESLint checks as precommit and Next.js build commands as prepush actions has proven effective.
+
+For version control, I prefer **GitHub** due to its simplicity and effectiveness, especially for small team collaborations.
+
+**Tailwind CSS** facilitates rapid development of visually appealing web applications, thanks to its intuitive CSS utility classes.
+
+**Prettier** stands out as my personal favorite tool for code formatting, ensuring consistent and aesthetically pleasing code. Its integration with VSCode through a `.prettierrc` file and settings further streamlines the development process.
+
+**t3-env** offers a TypeScript-like approach to handling environment variables, enhancing reliability and ease of use.
+
+**Shadcn/Ui** has become my go-to choice for swiftly building visually appealing websites, thanks to its extensive library of pre-styled components.
 
 ### Conclusion 📬
+
+In conclusion, establishing a robust toolset and configuration is crucial for Next.js 14 projects. By incorporating TypeScript for type safety, ESLint and Commitlint for code quality and traceability, Husky for automated checks, GitHub for version control, Tailwind CSS for styling, Prettier for code formatting, t3-env for environment variables, and Shadcn/Ui for UI components, developers can streamline their development workflow, ensuring efficient project management and high-quality outputs.
